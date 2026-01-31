@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column; /* força coluna */
+    justify-content: center; /* eixo VERTICAL */
+    align-items: center;     /* eixo HORIZONTAL */
+
+
+}
+
+
+.topo-site{
+    background-color: black;
+    color: white;
+    padding: 10vh;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10vh;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.topo-site h1{
+    margin: 4vh;
+
+}
+
+.introdução-site{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5vh;
+    width: 100vh;
+    margin:4vh;
+    text-align: center;
+
+}
+
+.introdução-site h2{
+    margin: 4vh;
+
+}
+
+.conteudo-1 h2{
+    margin: 4vh;
+
+}
+
+.conteudo-2 h2{
+    margin: 4vh;
+}
+
+.conteudo-3 h2{
+    margin: 4vh;
+}
+
+.conteudo-4 h2{
+    margin: 4vh;
+}
+
+.conteudo-1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5vh;
+    width: 100vh;
+    text-align: center;
+    margin:4vh;
+
+
+}
+
+.conteudo-2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5vh;
+    width: 100vh;
+    text-align: center;
+    margin: 4vh;
+
+}
+
+.conteudo-3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5vh;
+    width: 100vh;
+    text-align: center;
+    margin: 4vh;
+
+    
+
+}
+
+.conteudo-4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5vh;
+    width: 100vh;
+    text-align: center;
+    margin: 4vh;
+}
