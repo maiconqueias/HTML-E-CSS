@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centralização total */
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+    background-color:#abddfa;
+
+}
+
+/* Caixa do formulário */
+.container-form{
+    width: 400px;
+    height: 320px;
+    background-color: #38b6ff;
+    box-shadow:  10px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+    opacity: 1;
+    transform: scale(0.9);
+    transition: all 0.5s ease;
+}
+.container-form.show{
+    opacity: 0;
+    transform: scale(1);
+}
+
+/* Cabeçalho */
+.cabecalho-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho-form h1{
+    font-family: "Arial", sans-serif;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #2a6383;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Campos */
+.campo-nome,
+.campo-senha{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+.campo-nome input,
+.campo-senha input{
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow:  10px 10px rgb(0, 0, 0);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+
+}
+
+
+
+.campo-nome input:hover{
+    background-color: rgb(184, 184, 184);
+    color: white;
+
+}
+.campo-senha input:hover{
+    background-color: rgb(184, 184, 184);
+    color: white;
+
+}
+
+
+.campo-nome input:active{
+    transform: translateY(5px); /* desce */
+    box-shadow: 0 0 0 #1f4a63;
+
+}
+.campo-senha input:active{
+    transform: translateY(5px); /* desce */
+    box-shadow: 0 0 0 #1f4a63;
+
+}
+/* Botão */
+.button-login{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.button-login button{
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow:  5px 5px rgb(0, 0, 0);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.button-login button:hover{
+    background-color: rgb(184, 184, 184);
+    color: white;
+}
+
+.button-login button:active{
+    transform: translateY(5px); /* desce */
+    box-shadow: 0 0 0 #1f4a63;
+
+}
+
