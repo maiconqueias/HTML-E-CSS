@@ -11,23 +11,44 @@
         <div class="container-form">
 
             <div class="cabecalho-form">
-                <h1>FORMULARIO</h1>
+                <h1>FORMULÁRIO</h1>
             </div>
 
+            <!-- ÁUDIO ÚNICO -->
+            <audio id="click-sound" src="/audio/click.wav"></audio>
+
             <div class="campo-nome">
-                <input type="text" placeholder="digite seu nome:">
+                <input type="text" placeholder="Digite seu nome">
             </div>
 
             <div class="campo-senha">
-                <input type="password" placeholder="digite sua senha:">
+                <input type="password" placeholder="Digite sua senha">
             </div>
 
             <div class="button-login">
-                <button>Login</button>
+                <button id="btn-login">Entrar</button>
             </div>
 
         </div>
     </div>
+
+    <script>
+        const sound = document.getElementById("click-sound");
+        const btn = document.getElementById("btn-login");
+
+        function playClickSound() {
+            sound.currentTime = 0;
+            sound.play();
+        }
+
+        // Botão
+        btn.addEventListener("mousedown", playClickSound);
+
+        // Inputs
+        document.querySelectorAll("input").forEach(input => {
+            input.addEventListener("focus", playClickSound);
+        });
+    </script>
 
 </body>
 </html>
